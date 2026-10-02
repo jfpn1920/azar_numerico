@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>azar numerico</title>
+    <link rel="stylesheet" href="azar_numerico.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="azar_numerico.js" defer></script>
+</head>
+<body>
+    <!---------------------------------->
+    <!--|estructuracion_azar_numerico|-->
+    <!---------------------------------->
+    <header class="encabezado">
+        <div class="icono_encabezado">
+            <i class="fa-solid fa-dice"></i>
+        </div>
+        <div class="contenido_encabezado">
+            <span class="etiqueta">GENERADOR ALEATORIO</span>
+            <h1>Azar Numérico</h1>
+            <p>Genera un número aleatorio del 1 al 10.</p>
+        </div>
+    </header>
+    <!---------------------------------------------->
+    <!--|estructuracion_contenido_numero_generado|-->
+    <!---------------------------------------------->
+    <main class="contenedor">
+        <section class="generador">
+            <div class="titulo_generador">
+                <i class="fa-solid fa-shuffle"></i>
+                <h2>Número generado</h2>
+            </div>
+            <div class="numero_contenedor">
+                <span id="numero">?</span>
+            </div>
+            <p class="texto_ayuda">Presiona el botón para obtener un número.</p>
+            <button class="boton generar" id="generar"><i class="fa-solid fa-dice"></i>Generar número</button>
+            <p id="mensaje" class="mensaje"></p>
+        </section>
+        <!--------------------------->
+        <!--|informacion_del_rango|-->
+        <!--------------------------->
+        <section class="informacion">
+            <div class="dato">
+                <i class="fa-solid fa-arrow-down-1-9"></i>
+                <span>Valor mínimo</span>
+                <strong>1</strong>
+            </div>
+            <div class="dato">
+                <i class="fa-solid fa-arrow-up-9-1"></i>
+                <span>Valor máximo</span>
+                <strong>10</strong>
+            </div>
+            <div class="dato">
+                <i class="fa-solid fa-hashtag"></i>
+                <span>Generaciones</span>
+                <strong id="cantidad">0</strong>
+            </div>
+        </section>
+        <!-------------------------->
+        <!--|historial_de_numeros|-->
+        <!-------------------------->
+        <section class="historial">
+            <div class="titulo_historial">
+                <div>
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <h2>Historial</h2>
+                </div>
+                <span id="total">0 números</span>
+            </div>
+            <div class="lista_numeros" id="listaNumeros">
+                <p class="sin_datos">Todavía no has generado números.</p>
+            </div>
+        </section>
+        <!---------------------------------------->
+        <!--|boton_para_restablecer_informacion|-->
+        <!---------------------------------------->
+        <section class="seccion_reset">
+            <button class="boton restablecer" id="restablecer"><i class="fa-solid fa-trash"></i>Restablecer datos</button>
+        </section>
+    </main>
+</body>
+</html>

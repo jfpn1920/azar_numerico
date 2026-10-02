@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #263238;
+    min-height: 100vh;
+}
+/*--------------------------*/
+/*--|estilo_azar_numerico|--*/
+/*--------------------------*/
+.encabezado {
+    background: #202a44;
+    color: white;
+    padding: 35px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.icono_encabezado {
+    width: 75px;
+    height: 75px;
+    border-radius: 18px;
+    background: #7e57c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+}
+.contenido_encabezado h1 {
+    font-size: 32px;
+    margin: 5px 0;
+}
+.contenido_encabezado p {
+    color: #cfd8dc;
+}
+.etiqueta {
+    color: #b39ddb;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+/*--------------------------------------*/
+/*--|estilo_contenido_numero_generado|--*/
+/*--------------------------------------*/
+.contenedor {
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
+}
+.generador {
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 8px 25px #00000012;
+}
+.titulo_generador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #5e35b1;
+}
+.titulo_generador i {
+    font-size: 23px;
+}
+.numero_contenedor {
+    width: 190px;
+    height: 190px;
+    margin: 30px auto 20px;
+    border-radius: 50%;
+    background: #ede7f6;
+    border: 8px solid #9575cd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.numero_contenedor span {
+    font-size: 80px;
+    font-weight: bold;
+    color: #5e35b1;
+}
+.texto_ayuda {
+    color: #78909c;
+    margin-bottom: 20px;
+}
+.boton {
+    border: none;
+    border-radius: 9px;
+    padding: 13px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+.generar {
+    background: #5e35b1;
+    color: white;
+}
+.generar:hover {
+    background: #4527a0;
+}
+.mensaje {
+    min-height: 20px;
+    margin-top: 15px;
+    color: #2e7d32;
+}
+/*----------------------------------*/
+/*--|estilo_informacion_del_rango|--*/
+/*----------------------------------*/
+.informacion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+.dato {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px #0000000d;
+}
+.dato i {
+    display: block;
+    color: #7e57c2;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.dato span {
+    display: block;
+    color: #78909c;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+.dato strong {
+    font-size: 22px;
+    color: #263238;
+}
+/*---------------------------------*/
+/*--|estilo_historial_de_numeros|--*/
+/*---------------------------------*/
+.historial {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px #0000000d;
+}
+.titulo_historial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.titulo_historial div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.titulo_historial i {
+    color: #7e57c2;
+}
+.titulo_historial span {
+    color: #78909c;
+    font-size: 13px;
+}
+.lista_numeros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.numero_historial {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: #ede7f6;
+    color: #5e35b1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.sin_datos {
+    width: 100%;
+    text-align: center;
+    color: #90a4ae;
+    padding: 15px;
+}
+/*-----------------------------------------------*/
+/*--|estilo_boton_para_restablecer_informacion|--*/
+/*-----------------------------------------------*/
+.seccion_reset {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+.restablecer {
+    background: #c62828;
+    color: white;
+}
